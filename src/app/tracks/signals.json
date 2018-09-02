@@ -1,0 +1,332 @@
+{
+  "SIGNALS": [
+    {
+      "SignalName": "RT-SIGNAL",
+      "lx": 1025,
+      "ly": 175,
+      "rx": 675,
+      "ry": 350,
+      "SubdivisionName": "MCCOMB"
+    },
+    {
+      "SignalName": "LT-SIGNAL",
+      "lx": 1240,
+      "ly": 155,
+      "rx": 890,
+      "ry": 330,
+      "SubdivisionName": "MCCOMB"
+    },
+    {
+      "SignalName": "RF-SIGNAL",
+      "lx": 1025,
+      "ly": 215,
+      "rx": 675,
+      "ry": 390,
+      "SubdivisionName": "MCCOMB"
+    },
+    {
+      "SignalName": "LF-SIGNAL",
+      "lx": 1240,
+      "ly": 195,
+      "rx": 890,
+      "ry": 370,
+      "SubdivisionName": "MCCOMB"
+    },
+    {
+      "SignalName": "F-SIGNAL",
+      "lx": 80,
+      "ly": 720,
+      "rx": 810,
+      "ry": 620,
+      "SubdivisionName": "MCCOMB"
+    },
+    {
+      "SignalName": "TM-SIGNAL",
+      "lx": 180,
+      "ly": 695,
+      "rx": 910,
+      "ry": 600,
+      "SubdivisionName": "MCCOMB"
+    },
+    {
+      "SignalName": "TS-SIGNAL",
+      "lx": 180,
+      "ly": 735,
+      "rx": 910,
+      "ry": 640,
+      "SubdivisionName": "MCCOMB"
+    },
+    {
+      "SignalName": "TM-SIGNAL",
+      "lx": 1380,
+      "ly": 175,
+      "rx": 1000,
+      "ry": 620,
+      "SubdivisionName": "MCCOMB"
+    },
+    {
+      "SignalName": "TS-SIGNAL",
+      "lx": 1380,
+      "ly": 215,
+      "rx": 1000,
+      "ry": 660,
+      "SubdivisionName": "MCCOMB"
+    },
+    {
+      "SignalName": "F-SIGNAL",
+      "lx": 1480,
+      "ly": 155,
+      "rx": 1100,
+      "ry": 600,
+      "SubdivisionName": "MCCOMB"
+    },
+    {
+      "SignalName": "T-SIGNAL",
+      "lx": 250,
+      "ly": 715,
+      "rx": 1000,
+      "ry": 620,
+      "SubdivisionName": "MCCOMB"
+    },
+    {
+      "SignalName": "T-SIGNAL",
+      "lx": 250,
+      "ly": 755,
+      "rx": 1000,
+      "ry": 660,
+      "SubdivisionName": "MCCOMB"
+    },
+    {
+      "SignalName": "F-SIGNAL",
+      "lx": 350,
+      "ly": 695,
+      "rx": 1100,
+      "ry": 600,
+      "SubdivisionName": "MCCOMB"
+    },
+    {
+      "SignalName": "2R-SIGNAL",
+      "lx": 460,
+      "ly": 715,
+      "rx": 1000,
+      "ry": 620,
+      "SubdivisionName": "MCCOMB"
+    },
+    {
+      "SignalName": "2L-SIGNAL",
+      "lx": 490,
+      "ly": 695,
+      "rx": 1100,
+      "ry": 600,
+      "SubdivisionName": "MCCOMB"
+    },
+    {
+      "SignalName": "F-SIGNAL",
+      "lx": 600,
+      "ly": 715,
+      "rx": 655,
+      "ry": 770,
+      "SubdivisionName": "MCCOMB"
+    },
+    {
+      "SignalName": "TM-SIGNAL",
+      "lx": 700,
+      "ly": 695,
+      "rx": 755,
+      "ry": 750,
+      "SubdivisionName": "MCCOMB"
+    },
+    {
+      "SignalName": "TS-SIGNAL",
+      "lx": 700,
+      "ly": 655,
+      "rx": 755,
+      "ry": 710,
+      "SubdivisionName": "MCCOMB"
+    },
+    {
+      "SignalName": "RF-SIGNAL",
+      "lx": 790,
+      "ly": 675,
+      "rx": 530,
+      "ry": 495,
+      "SubdivisionName": "MCCOMB"
+    },
+    {
+      "SignalName": "LF-SIGNAL",
+      "lx": 995,
+      "ly": 655,
+      "rx": 745,
+      "ry": 475,
+      "SubdivisionName": "MCCOMB"
+    },
+    {
+      "SignalName": "RT-SIGNAL",
+      "lx": 790,
+      "ly": 715,
+      "rx": 530,
+      "ry": 535,
+      "SubdivisionName": "MCCOMB"
+    },
+    {
+      "SignalName": "LT-SIGNAL",
+      "lx": 995,
+      "ly": 695,
+      "rx": 745,
+      "ry": 515,
+      "SubdivisionName": "MCCOMB"
+    },
+    {
+      "SignalName": "4R-SIGNAL",
+      "lx": 1085,
+      "ly": 675,
+      "rx": 580,
+      "ry": 575,
+      "SubdivisionName": "MCCOMB"
+    },
+    {
+      "SignalName": "4L-SIGNAL",
+      "lx": 1230,
+      "ly": 655,
+      "rx": 710,
+      "ry": 555,
+      "SubdivisionName": "MCCOMB"
+    },
+    {
+      "SignalName": "2R-SIGNAL",
+      "lx": 1085,
+      "ly": 715,
+      "rx": 580,
+      "ry": 615,
+      "SubdivisionName": "MCCOMB"
+    },
+    {
+      "SignalName": "2L-SIGNAL",
+      "lx": 1230,
+      "ly": 695,
+      "rx": 710,
+      "ry": 595,
+      "SubdivisionName": "MCCOMB"
+    },
+    {
+      "SignalName": "6L-SIGNAL",
+      "lx": 1205,
+      "ly": 735,
+      "rx": 910,
+      "ry": 640,
+      "SubdivisionName": "MCCOMB"
+    },
+    {
+      "SignalName": "F-SIGNAL",
+      "lx": 1370,
+      "ly": 715,
+      "rx": 810,
+      "ry": 620,
+      "SubdivisionName": "MCCOMB"
+    },
+    {
+      "SignalName": "TM-SIGNAL",
+      "lx": 1470,
+      "ly": 695,
+      "rx": 910,
+      "ry": 600,
+      "SubdivisionName": "MCCOMB"
+    },
+    {
+      "SignalName": "TS-SIGNAL",
+      "lx": 1470,
+      "ly": 735,
+      "rx": 910,
+      "ry": 640,
+      "SubdivisionName": "MCCOMB"
+    },
+    {
+      "SignalName": "4L-SIGNAL",
+      "lx": 865,
+      "ly": 155,
+      "rx": 680,
+      "ry": 100,
+      "SubdivisionName": "MCCOMB"
+    },
+    {
+      "SignalName": "2L-SIGNAL",
+      "lx": 865,
+      "ly": 195,
+      "rx": 680,
+      "ry": 140,
+      "SubdivisionName": "MCCOMB"
+    },
+    {
+      "SignalName": "8REF-SIGNAL",
+      "lx": 145,
+      "ly": 295,
+      "rx": 465,
+      "ry": 160,
+      "SubdivisionName": "MCCOMB"
+    },
+    {
+      "SignalName": "8RCD-SIGNAL",
+      "lx": 170,
+      "ly": 255,
+      "rx": 465,
+      "ry": 160,
+      "SubdivisionName": "MCCOMB"
+    },
+    {
+      "SignalName": "8RAB-SIGNAL",
+      "lx": 170,
+      "ly": 215,
+      "rx": 465,
+      "ry": 160,
+      "SubdivisionName": "MCCOMB"
+    },
+    {
+      "SignalName": "8RGH-SIGNAL",
+      "lx": 145,
+      "ly": 335,
+      "rx": 465,
+      "ry": 160,
+      "SubdivisionName": "MCCOMB"
+    },
+    {
+      "SignalName": "6R-SIGNAL",
+      "lx": 290,
+      "ly": 135,
+      "rx": 465,
+      "ry": 160,
+      "SubdivisionName": "MCCOMB"
+    },
+    {
+      "SignalName": "4R-SIGNAL",
+      "lx": 290,
+      "ly": 175,
+      "rx": 465,
+      "ry": 160,
+      "SubdivisionName": "MCCOMB"
+    },
+    {
+      "SignalName": "8L-SIGNAL",
+      "lx": 790,
+      "ly": 235,
+      "rx": 680,
+      "ry": 140,
+      "SubdivisionName": "MCCOMB"
+    },
+    {
+      "SignalName": "6LAB-SIGNAL",
+      "lx": 870,
+      "ly": 115,
+      "rx": 680,
+      "ry": 140,
+      "SubdivisionName": "MCCOMB"
+    },
+    {
+      "SignalName": "6LCD-SIGNAL",
+      "lx": 870,
+      "ly": 75,
+      "rx": 680,
+      "ry": 140,
+      "SubdivisionName": "MCCOMB"
+    }
+  ]
+}

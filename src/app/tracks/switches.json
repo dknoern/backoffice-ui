@@ -1,0 +1,356 @@
+{
+  "SWITCHES": [
+    {
+      "SwitchName": "RA SWITCH",
+      "lx": 1110,
+      "ly": 165,
+      "rx": 760,
+      "ry": 1110,
+      "SubdivisionName": "MCCOMB"
+    },
+    {
+      "SwitchName": "1 SWITCH",
+      "lx": 1405,
+      "ly": 705,
+      "rx": 845,
+      "ry": 1405,
+      "SubdivisionName": "MCCOMB"
+    },
+    {
+      "SwitchName": "MP 799.81",
+      "lx": 1355,
+      "ly": 705,
+      "rx": 1200,
+      "ry": 1355,
+      "SubdivisionName": "MCCOMB"
+    },
+    {
+      "SwitchName": "3A SWITCH",
+      "lx": 775,
+      "ly": 165,
+      "rx": 595,
+      "ry": 775,
+      "SubdivisionName": "MCCOMB"
+    },
+    {
+      "SwitchName": "3A SWITCH",
+      "lx": 815,
+      "ly": 205,
+      "rx": 635,
+      "ry": 815,
+      "SubdivisionName": "MCCOMB"
+    },
+    {
+      "SwitchName": "15 SWITCH",
+      "lx": 235,
+      "ly": 205,
+      "rx": 290,
+      "ry": 235,
+      "SubdivisionName": "MCCOMB"
+    },
+    {
+      "SwitchName": "7 SWITCH",
+      "lx": 685,
+      "ly": 205,
+      "rx": 285,
+      "ry": 685,
+      "SubdivisionName": "MCCOMB"
+    },
+    {
+      "SwitchName": "MP 731.82",
+      "lx": 1265,
+      "ly": 165,
+      "rx": 1335,
+      "ry": 1265,
+      "SubdivisionName": "MCCOMB"
+    },
+    {
+      "SwitchName": "MP 739.64",
+      "lx": 1505,
+      "ly": 165,
+      "rx": 1510,
+      "ry": 1505,
+      "SubdivisionName": "MCCOMB"
+    },
+    {
+      "SwitchName": "MP 740.1",
+      "lx": 1540,
+      "ly": 165,
+      "rx": 1550,
+      "ry": 1540,
+      "SubdivisionName": "MCCOMB"
+    },
+    {
+      "SwitchName": "MP 745.05",
+      "lx": 80,
+      "ly": 705,
+      "rx": 205,
+      "ry": 80,
+      "SubdivisionName": "MCCOMB"
+    },
+    {
+      "SwitchName": "MP 753.72",
+      "lx": 195,
+      "ly": 745,
+      "rx": 225,
+      "ry": 195,
+      "SubdivisionName": "MCCOMB"
+    },
+    {
+      "SwitchName": "1 SWITCH",
+      "lx": 805,
+      "ly": 125,
+      "rx": 510,
+      "ry": 805,
+      "SubdivisionName": "MCCOMB"
+    },
+    {
+      "SwitchName": "MP 758.75",
+      "lx": 390,
+      "ly": 705,
+      "rx": 430,
+      "ry": 390,
+      "SubdivisionName": "MCCOMB"
+    },
+    {
+      "SwitchName": "5A SWITCH",
+      "lx": 680,
+      "ly": 125,
+      "rx": 285,
+      "ry": 680,
+      "SubdivisionName": "MCCOMB"
+    },
+    {
+      "SwitchName": "5A SWITCH",
+      "lx": 640,
+      "ly": 165,
+      "rx": 285,
+      "ry": 640,
+      "SubdivisionName": "MCCOMB"
+    },
+    {
+      "SwitchName": "11A SWITCH",
+      "lx": 365,
+      "ly": 125,
+      "rx": 285,
+      "ry": 365,
+      "SubdivisionName": "MCCOMB"
+    },
+    {
+      "SwitchName": "13 SWITCH",
+      "lx": 345,
+      "ly": 205,
+      "rx": 285,
+      "ry": 345,
+      "SubdivisionName": "MCCOMB"
+    },
+    {
+      "SwitchName": "17 SWITCH",
+      "lx": 210,
+      "ly": 285,
+      "rx": 265,
+      "ry": 210,
+      "SubdivisionName": "MCCOMB"
+    },
+    {
+      "SwitchName": "9A SWITCH",
+      "lx": 500,
+      "ly": 205,
+      "rx": 510,
+      "ry": 500,
+      "SubdivisionName": "MCCOMB"
+    },
+    {
+      "SwitchName": "11A SWITCH",
+      "lx": 405,
+      "ly": 165,
+      "rx": 285,
+      "ry": 405,
+      "SubdivisionName": "MCCOMB"
+    },
+    {
+      "SwitchName": "9A SWITCH",
+      "lx": 540,
+      "ly": 165,
+      "rx": 550,
+      "ry": 540,
+      "SubdivisionName": "MCCOMB"
+    },
+    {
+      "SwitchName": "MP 761.49",
+      "lx": 415,
+      "ly": 705,
+      "rx": 485,
+      "ry": 415,
+      "SubdivisionName": "MCCOMB"
+    },
+    {
+      "SwitchName": "MP 761.90",
+      "lx": 430,
+      "ly": 705,
+      "rx": 585,
+      "ry": 430,
+      "SubdivisionName": "MCCOMB"
+    },
+    {
+      "SwitchName": "MP 762.39",
+      "lx": 450,
+      "ly": 705,
+      "rx": 775,
+      "ry": 450,
+      "SubdivisionName": "MCCOMB"
+    },
+    {
+      "SwitchName": "MP 763.63",
+      "lx": 500,
+      "ly": 705,
+      "rx": 705,
+      "ry": 500,
+      "SubdivisionName": "MCCOMB"
+    },
+    {
+      "SwitchName": "MP 769.27",
+      "lx": 555,
+      "ly": 705,
+      "rx": 675,
+      "ry": 555,
+      "SubdivisionName": "MCCOMB"
+    },
+    {
+      "SwitchName": "MP 780.99",
+      "lx": 1050,
+      "ly": 665,
+      "rx": 1155,
+      "ry": 1050,
+      "SubdivisionName": "MCCOMB"
+    },
+    {
+      "SwitchName": "LA SWITCH",
+      "lx": 1155,
+      "ly": 165,
+      "rx": 805,
+      "ry": 1155,
+      "SubdivisionName": "MCCOMB"
+    },
+    {
+      "SwitchName": "RA SWITCH",
+      "lx": 1070,
+      "ly": 205,
+      "rx": 720,
+      "ry": 1070,
+      "SubdivisionName": "MCCOMB"
+    },
+    {
+      "SwitchName": "LA SWITCH",
+      "lx": 1195,
+      "ly": 205,
+      "rx": 845,
+      "ry": 1195,
+      "SubdivisionName": "MCCOMB"
+    },
+    {
+      "SwitchName": "1 SWITCH",
+      "lx": 115,
+      "ly": 705,
+      "rx": 845,
+      "ry": 115,
+      "SubdivisionName": "MCCOMB"
+    },
+    {
+      "SwitchName": "1 SWITCH",
+      "lx": 1445,
+      "ly": 165,
+      "rx": 1065,
+      "ry": 1445,
+      "SubdivisionName": "MCCOMB"
+    },
+    {
+      "SwitchName": "1 SWITCH",
+      "lx": 315,
+      "ly": 705,
+      "rx": 1065,
+      "ry": 315,
+      "SubdivisionName": "MCCOMB"
+    },
+    {
+      "SwitchName": "1 SWITCH",
+      "lx": 635,
+      "ly": 705,
+      "rx": 690,
+      "ry": 635,
+      "SubdivisionName": "MCCOMB"
+    },
+    {
+      "SwitchName": "RA SWITCH ",
+      "lx": 830,
+      "ly": 665,
+      "rx": 575,
+      "ry": 830,
+      "SubdivisionName": "MCCOMB"
+    },
+    {
+      "SwitchName": "LA SWITCH ",
+      "lx": 955,
+      "ly": 665,
+      "rx": 700,
+      "ry": 955,
+      "SubdivisionName": "MCCOMB"
+    },
+    {
+      "SwitchName": "RA SWITCH ",
+      "lx": 870,
+      "ly": 705,
+      "rx": 615,
+      "ry": 870,
+      "SubdivisionName": "MCCOMB"
+    },
+    {
+      "SwitchName": "MP 792.97",
+      "lx": 1315,
+      "ly": 705,
+      "rx": 1280,
+      "ry": 1315,
+      "SubdivisionName": "MCCOMB"
+    },
+    {
+      "SwitchName": "LA SWITCH ",
+      "lx": 915,
+      "ly": 705,
+      "rx": 660,
+      "ry": 915,
+      "SubdivisionName": "MCCOMB"
+    },
+    {
+      "SwitchName": "3A SWITCH ",
+      "lx": 1155,
+      "ly": 665,
+      "rx": 625,
+      "ry": 1155,
+      "SubdivisionName": "MCCOMB"
+    },
+    {
+      "SwitchName": "3A SWITCH ",
+      "lx": 1195,
+      "ly": 705,
+      "rx": 665,
+      "ry": 1195,
+      "SubdivisionName": "MCCOMB"
+    },
+    {
+      "SwitchName": "SWITCH 1",
+      "lx": 1120,
+      "ly": 705,
+      "rx": 845,
+      "ry": 1120,
+      "SubdivisionName": "MCCOMB"
+    },
+    {
+      "SwitchName": "MP 743.87",
+      "lx": 35,
+      "ly": 705,
+      "rx": 50,
+      "ry": 35,
+      "SubdivisionName": "MCCOMB"
+    }
+  ]
+}

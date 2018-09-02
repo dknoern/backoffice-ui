@@ -1,0 +1,212 @@
+import { Component, OnInit } from '@angular/core';
+import { ViewChild, ElementRef } from '@angular/core';
+declare var $: any;
+// declare function require(url: string);
+interface Signal {
+    SignalName: string;
+    lx: number;
+    ly: number;
+    rx: number;
+    ry: number;
+    SubdivisionName: string;
+}
+interface Signals {
+    SIGNALS: Array<Signal>;
+}
+interface Switch {
+    SwitchName: string;
+    lx: number;
+    ly: number;
+    rx: number;
+    ry: number;
+    SubdivisionName: string;
+}
+interface Switches {
+    SWITCHES: Array<Switch>;
+}
+interface Track {
+    TrackName: string;
+    lx: number;
+    ly: number;
+    rx: number;
+    ry: number;
+    LeftLimitMPRange: number;
+    RightLimitMPRange: number;
+    TrackNameAlias: string;
+    SubdivisionName: string;
+}
+interface Tracks {
+    TRACKS: Array<Track>;
+}
+
+
+// import signals from '../tracks/signals.json';
+// import switches from './switches.json';
+// import tracks from './tracks.json';
+
+
+@Component({
+    selector: 'app-locomotives',
+    templateUrl: './tracks.component.html',
+    styleUrls: ['./tracks.component.css']
+})
+export class TracksComponent implements OnInit {
+    @ViewChild('myCanvas') myCanvas: ElementRef;
+    public ctx: CanvasRenderingContext2D;
+    public signalData: Signals; // = require('./signals.json');
+    public switchData: Switches; // = require('./switches.json');
+    public trackData: Tracks;  //= require('./tracks.json');
+    constructor() { }
+    ngOnInit() {
+
+        const canvas = <HTMLCanvasElement> document.getElementById('canvas');
+        this.ctx = canvas.getContext('2d');
+        this.ctx.fillText('Subdivision: MCCOMB', 300, 300);
+        canvas.addEventListener('mousemove', function (evt) {
+            const rect = canvas.getBoundingClientRect();
+            const x = evt.clientX - rect.left;
+            const y = evt.clientY - rect.top;
+            const message = 'Mouse position: ' + x.toFixed(0) + ', ' + y.toFixed(0);
+            const ctx = canvas.getContext('2d');
+            ctx.clearRect(1600, 225, canvas.width - 1600, canvas.height - 225);
+            ctx.font = '18pt Calibri';
+            ctx.fillStyle = 'black';
+            ctx.fillText(message, 1610, 255);
+
+            this.signalData.SIGNALS.forEach(function (s) {
+                if (Math.abs(x - s.lx) < 10 && Math.abs(y - s.ly) < 10) {
+                    this.displayComponent('Signal: ' + s.SignalName);
+                }
+            });
+
+            this.switchData.SWITCHES.forEach(function (s) {
+                if (Math.abs(x - s.lx) < 10 && Math.abs(y - s.ly) < 10) {
+                    this.displayComponent('Switch: ' + s.SwitchName);
+                }
+            });
+
+            this.trackData.TRACKS.forEach(function (s) {
+
+                if ( this.pDistance(x, y, s.lx, s.ly, s.rx, s.ry) < 10) {
+                    this.displayComponent('Track: ' + s.TrackName);
+                    ctx.fillText('Track Alias: ' + s.TrackNameAlias, 1610, 325);
+                    ctx.fillText('Left MP: ' + s.LeftLimitMPRange, 1610, 355);
+                    ctx.fillText('Right MP: ' + s.RightLimitMPRange, 1610, 385);
+                }
+            });
+        }, false);
+
+        // this.draw(this.ctx);
+
+    }
+    drawBlock(ctx, lx, ly, rx, ry) {
+        ctx.beginPath();
+
+        ctx.lineWidth = 6;
+        ctx.strokeStyle = '#333333';
+        ctx.moveTo(lx, ly);
+        ctx.lineTo(rx, ry);
+        ctx.lineCap = 'round';
+
+        ctx.stroke();
+    }
+
+    drawSwitch(ctx, lx, ly) {
+
+        ctx.beginPath();
+
+        ctx.lineWidth = 5;
+        ctx.strokeStyle = '#00FF00';
+        ctx.moveTo(lx - 2, ly - 2);
+        ctx.lineTo(lx + 2, ly - 2);
+        ctx.lineTo(lx + 2, ly + 2);
+        ctx.lineTo(lx - 2, ly + 2);
+        ctx.stroke();
+    }
+
+    drawSignal(ctx, lx, ly) {
+
+        const radius = 6;
+
+        ctx.beginPath();
+        ctx.arc(lx, ly, radius, 0, 2 * Math.PI, false);
+        ctx.fillStyle = 'red';
+        ctx.fill();
+        ctx.lineWidth = 1;
+        ctx.strokeStyle = '#003300';
+        ctx.stroke();
+    }
+    draw(ctx) {
+        const img = new Image();
+        img.onload = function () {
+            ctx.drawImage(img, 1610, 0);
+        };
+        img.src = 'logo.png';
+
+        this.ctx.fillStyle = '#CCCCcc';
+        this.ctx.fillRect(0, 0, 2000, 1000);
+
+        this.ctx.font = '18pt Calibri';
+        this.ctx.fillStyle = 'black';
+        this.ctx.fillText('Subdivision: MCCOMB', 1610, 215);
+        this.trackData.TRACKS.forEach(function (track) {
+            let dx = 0;
+            let dy = 0;
+
+            if (track.rx - track.lx > 1) {
+                dx = 4;
+            } else if (track.rx - track.lx < -1) {
+                dx = 4;
+            }
+            if (track.ry - track.ly > 1) {
+                dy = -4;
+            } else if (track.ry - track.ly < -1) {
+                dy = 4;
+            }
+
+            this.drawBlock(this.ctx, track.lx + dx, track.ly - dy, track.rx - dx, track.ry + dy);
+        });
+        this.switchData.SWITCHES.forEach(function (s) {
+            this.drawSwitch(this.ctx, s.lx, s.ly);
+        });
+        this.signalData.SIGNALS.forEach(function (s) {
+            this.drawSignal(this.ctx, s.lx, s.ly);
+        });
+    }
+    displayComponent(message) {
+        this.ctx.clearRect(1610, 275, 1850, 395);
+        this.ctx.fillText(message, 1610, 295);
+    }
+
+    pDistance(x, y, x1, y1, x2, y2) {
+
+        const A = x - x1;
+        const B = y - y1;
+        const C = x2 - x1;
+        const D = y2 - y1;
+
+        const dot = A * C + B * D;
+        const len_sq = C * C + D * D;
+        let param = -1;
+        if (len_sq !== 0) { // in case of 0 length line
+            param = dot / len_sq;
+        }
+
+        let xx, yy: number;
+
+        if (param < 0) {
+            xx = x1;
+            yy = y1;
+        } else if (param > 1) {
+            xx = x2;
+            yy = y2;
+        } else {
+            xx = x1 + param * C;
+            yy = y1 + param * D;
+        }
+
+        const dx = x - xx;
+        const dy = y - yy;
+        return Math.sqrt(dx * dx + dy * dy);
+    }
+}
